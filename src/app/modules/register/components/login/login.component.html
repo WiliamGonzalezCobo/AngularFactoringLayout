@@ -1,0 +1,80 @@
+<div class="login-container">
+<div class="login-card">
+  
+    <form action="your-action" (submit)="onFormSubmit($event)">
+      <div class="dx-fieldset">
+          <div class="dx-fieldset-header">
+            <p class="text-center mb-4"><img src="assets/images/logo.svg" alt=""></p>
+            <h2>Ingreso</h2></div>
+          <div class="dx-field">
+              <div class="dx-field-label">Usuario / Email</div>
+              <div class="dx-field-value">
+                  <dx-text-box> 
+                      <dx-validator>
+                          <dxi-validation-rule type="required" message="Email is required"></dxi-validation-rule>
+                          <dxi-validation-rule type="email" message="Email is invalid"></dxi-validation-rule>
+                          <dxi-validation-rule type="async" message="Email is already registered" [validationCallback]="asyncValidation"></dxi-validation-rule>
+                      </dx-validator>
+                  </dx-text-box>
+              </div>
+          </div>
+          <div class="dx-field">
+              <div class="dx-field-label">Password</div>
+              <div class="dx-field-value">
+                  <dx-text-box
+                      mode="password"
+                      [(value)]="password">
+                      <dx-validator>
+                          <dxi-validation-rule type="required" message="Password is required"></dxi-validation-rule>
+                      </dx-validator>
+                  </dx-text-box>
+              </div>
+          </div>
+      </div> 
+      
+      <div class="dx-fieldset">
+          <!-- <div class="dx-fieldset-header">Billing address</div> -->
+          <div>
+              <dx-check-box 
+                  id="check"
+                  [value]="false"
+                  text="Recordarme">
+                  <dx-validator>
+                      <dxi-validation-rule type="compare" [comparisonTarget]="checkComparison" message="Recordarme"></dxi-validation-rule>
+                  </dx-validator>
+              </dx-check-box>
+          </div>
+          <div>
+            <dx-check-box 
+                id="check"
+                [value]="false"
+                text="Usuario misfacturas.com.co">
+                <dx-validator>
+                    <dxi-validation-rule type="compare" [comparisonTarget]="checkComparison" message="You must agree to the Terms and Conditions"></dxi-validation-rule>
+                </dx-validator>
+            </dx-check-box>
+        </div>
+      </div>
+    
+      <div class="dx-fieldset">
+          <!-- <dx-validation-summary id="summary"></dx-validation-summary> -->
+    
+          <dx-button 
+              id="button"
+              text="Entrar"
+              type="default"  
+              [useSubmitBehavior]="true">
+          </dx-button>
+          <a routerLinkActive="active" aria-current="page" routerLink="/forgot">Olvidé mi contraseña</a>
+        
+          <dx-button 
+          id="button"
+          text="Registro"
+          type="light"  
+          routerLink="/register">
+          </dx-button>
+        
+      </div>
+    </form>
+    </div>
+</div>

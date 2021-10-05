@@ -1,0 +1,33 @@
+<p>profile works!</p>
+HOLA
+
+
+<div id="tabs">
+    <!-- <div class="caption">API</div> -->
+    <dx-tabs
+        #apiTabs
+        [dataSource]="tabs"
+        [selectedIndex]="0"
+        (onItemClick)="selectTab($event)"
+    ></dx-tabs>
+    <div class="content dx-fieldset">
+        <div class="dx-field">
+           
+            <div class="dx-field-value">
+                <dx-select-box
+                    [dataSource]="tabs"
+                    displayExpr="text"
+                    valueExpr="id"
+                    (onItemClick)="selectTab($event)"
+                    [(value)]="apiTabs.selectedIndex"
+                ></dx-select-box>
+            </div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-value-static left-aligned">
+                {{tabContent}}
+                1
+            </div>
+        </div>
+    </div>
+</div>

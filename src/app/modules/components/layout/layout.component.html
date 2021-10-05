@@ -1,0 +1,203 @@
+
+<!-- [ Mobile header ] start -->
+<div class="pc-mob-header pc-header">
+  <div class="pcm-logo">
+    <img src="assets/images/logo.svg" alt="" class="logo logo-lg">
+  </div>
+  <div class="pcm-toolbar">
+    <a class="pc-head-link" id="mobile-collapse">
+      <div class="hamburger hamburger--arrowturn">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+      <!-- <i data-feather="menu"></i> -->
+    </a>
+    <!-- Three Dots -->
+    <a class="pc-head-link" id="header-collapse">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+    </a>
+  </div>
+</div>
+<!-- [ Mobile header ] End -->
+
+<!-- [ navigation menu ] start -->
+<nav class="pc-sidebar">
+  <div class="navbar-wrapper">
+    <div class="m-header">
+      <a href="#" class="b-brand">
+        <img src="assets/images/logo.svg" alt="" class="logo logo-lg">
+        <img src="assets/images/logo-sm.svg" alt="" class="logo logo-sm">
+      </a>
+    </div>
+    <div class="navbar-content ps ps--active-y">
+      <ul class="pc-navbar">
+        <li class="pc-item pc-hasmenu active pc-trigger">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-file-import-solid"></i></span><span class="pc-mtext">Registro factura</span></a>
+        </li>
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-receipt-solid"></i></span><span class="pc-mtext">Facturas</span><span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span></a>
+          <ul class="pc-submenu" style="display: none;">
+            <li class="pc-item pc-hasmenu"><a href="#" class="pc-link">Inscritas para compra</a></li>
+            <li class="pc-item pc-hasmenu"><a href="#" class="pc-link">Compra directa</a></li>
+            <li class="pc-item pc-hasmenu"><a href="#" class="pc-link">Reportes</a></li>
+          </ul>
+        </li>
+
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-assignment_ind_black_24dp"></i></span><span class="pc-mtext">Cargos</span></a>
+        </li>
+
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-file-signature-solid"></i></span><span class="pc-mtext">Contratos</span></a>
+        </li>
+
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-clipboard-list-solid"></i></span><span class="pc-mtext">Reportes</span></a>
+        </li>
+
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link "><span class="pc-micon"><i class="icon-users-solid"></i></span><span class="pc-mtext">Pagadores</span></a>
+        </li>
+
+      </ul>
+    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 717px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 157px;"></div></div></div>
+  </div>
+</nav>
+<!-- [ navigation menu ] end -->
+<!-- [ Header ] start -->
+<header class="pc-header ">
+  <div class="header-wrapper">
+    <div class="m-header d-flex align-items-center">
+      <a class="pc-head-link me-0" [routerLink]=""  id="vertical-nav-toggle">
+        <i class="icon-vertical_split"></i>
+      </a>
+    </div>
+
+      <div class="ms-auto">
+      <ul class="list-unstyled">
+
+        
+        <li class="pc-h-item">
+          <a class="pc-head-link me-0" href="#" data-bs-toggle="modal" data-bs-target="#notification-modal">
+            <i class="icon-bell-solid"></i>
+            <span class="bg-danger pc-h-badge dots"><span class="sr-only"></span></span>
+          </a>
+        </li>
+
+        
+        <li class="dropdown pc-h-item">
+          <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+            <img src="https://dummyimage.com/90x90.png" alt="user-image" class="user-avtar">
+            <span>
+              <span class="user-name">Usuario</span>
+              <span class="user-desc">Empresa</span>
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+      
+            <a class="dropdown-item" routerLinkActive="active" aria-current="page" routerLink="/profile">
+              <span>Mi Cuenta</span>
+            </a>
+            <a href="#" class="dropdown-item">
+              <span>Salir</span>
+            </a>
+
+           
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+<!-- Modal -->
+<div class="modal notification-modal fade" id="notification-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h3>Notificaciones</h3>
+        <div class="tab-content pt-4 mt-4" id="pc-noti-tabContent">
+          <div class="tab-pane fade show active" id="pc-noti-home" role="tabpanel" aria-labelledby="pc-noti-home-tab">
+
+            <div class="media">
+              <img src="https://dummyimage.com/90x90.png" alt="images" class="img-fluid avtar avtar-l">
+              <div class="media-body ms-3 align-self-center">
+                <div class="float-end">
+                  <div class="btn-group card-option">
+                    <button type="button" class="btn shadow-none px-0 dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                    </button>
+                    <div class="dropdown dropdown-menu dropdown-menu-end">
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg> reload</a>
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> remove</a>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+                <p class="mb-0 d-inline-block  f-12 text-muted"> • 06/20/2019 at 6:43 PM </p>
+                <p class="my-3">Cras sit amet nibh libero in gravida nulla Nulla vel metus scelerisque ante sollicitudin.</p>
+              </div>
+            </div>
+            <hr class="mb-4">
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light-danger btn-sm" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-light-primary btn-sm">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- [ Header ] end -->
+
+<!-- [ Main Content ] start -->
+<div class="pc-container">
+  <div class="pcoded-content">
+      <!-- [ breadcrumb ] start -->
+      <div class="page-header">
+          <div class="page-block">
+              <div class="row align-items-center">
+                  <div class="col-md-6">
+                      <div class="page-header-title">
+                          <h5 class="m-b-10">Perfil Empresa</h5>
+                      </div>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                          <li class="breadcrumb-item">Perfil Empresa</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- [ breadcrumb ] end -->
+    <!-- [ Main Content ] start -->
+    <div class="row">
+          <router-outlet></router-outlet>
+    </div>
+    <!-- [ Main Content ] end -->
+<footer>
+      <div class="copy"><img src="assets/images/log-mifactoring-gray.png" alt=""><span>© 2021 mifactoring</span></div>
+</footer>
+
+          </div>
+       
+       
+          
+     
+
+
+
+
+
+
+
+
+

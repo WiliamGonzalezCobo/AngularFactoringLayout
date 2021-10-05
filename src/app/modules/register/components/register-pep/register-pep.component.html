@@ -1,0 +1,981 @@
+<div class="row container-xxl mx-auto">
+  <div class="col-md-12">
+
+
+
+<div class="progress my-5">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+</div>
+
+<div class="card flat-card">
+  <div class="card-header">
+    <div><i class="icon-clipboard-check-solid icon-h2"></i><h2>Criterios PEP</h2></div>
+  </div>
+  
+  <div class="card-body">
+    <div class="form-padding">
+    <p><strong>Cuéntenos si cumple con alguno de los criterios PEP Personas Expuestas Políticamente.</strong></p>
+    
+    <h3 class="title-form mt-4">Criterios PEP</h3>
+
+    <ol>
+      <li>Es representante legal de una organización internacional.</li>
+      <li>Es o ha sido funcionario público.</li>
+      <li>Es o ha sido general de las fuerzas militares.</li>
+      <li>Es o ha sido general o inspector de la policía nacional.</li>
+      <li>Es o ha sido representante legal, presidente, director o tesorero de un partido, movimiento político o asociación política reconocida por ley.</li>
+      <li>Ha obtenido a nombre propio un reconocimiento público oficial de nivel nacional o Internacional. Ha obtenido a nombre propio un reconocimiento    
+        público oficial de nivel nacional o internacional.</li>
+      <li>Tiene sociedad conyugal o unión marital de hecho con un tercero que ocupe alguno de los cargos 1- 6.</li>
+      <li>Tiene algún familiar (Padres, hijos abuelos, nietos, hermanos, padres del cónyuge, abuelos del cónyuge, nietos del cónyuge, hermanos del cónyuge)
+        que ocupe alguno de los cargos del 1 - 6.</li>
+      <li>PEP Extranjero. Desempeña o ha desempeñado funciones publicas destacadas en otro país</li>
+    </ol>
+
+          <dx-form id="form" [formData]="employee">
+
+  <dxi-item itemType="group" cssClass="first-group mt-5" [colCount]="1">  
+      
+      <p class="text-center"><strong>Cumple o ha cumplido con alguno de los criterios PEP?</strong></p>
+      
+      <dx-radio-group
+          [dataSource]="radioGroupItems"
+          displayExpr="text"
+          valueExpr="color"
+          value="green">
+      </dx-radio-group>
+    
+</dxi-item>
+      
+
+  <dxi-item itemType="group" cssClass="second-group mt-5" [colCount]="2">  
+
+    <dxi-item 
+    itemType="button"
+    horizontalAlignment="left"
+    routerLink="/register" 
+    [buttonOptions]="buttonRegresar">
+    </dxi-item>
+
+      <dxi-item 
+      itemType="button"
+      horizontalAlignment="right"
+      routerLink="/profile" 
+      [buttonOptions]="buttonContinuar">
+      </dxi-item>
+
+
+
+
+    </dxi-item>
+
+    </dx-form>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+  
+  <!-- Modal Allowance -->
+  <div class="modal fade" id="allowance" tabindex="-1" aria-labelledby="allowanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="allowanceModalLabel">Autorización de tratamiento de datos personales para las operaciones de factoring</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Autorizo, a <strong>CENET</strong>, a sus aliados de negocio y compañías que participen en la operación de financiamiento celebrada a recolectar, almacenar, depurar, usar, analizar, circular, actualizar, cruzar y eliminar los siguientes datos facilitados por cualquier medio:</p>
+
+          <ul class="mx-2">
+            <li>Información propia, de la persona jurídica a quien represento o de terceros </li>
+            <li>Datos de contacto (Dirección, teléfono, correo electrónico, cedula, escolaridad, información financiera y sociodemográfica, entre otros)</li>
+            <li>Cualquiera de los datos suministrados durante el proceso de solicitud, aprobación y desembolso de financiamiento, así como cualquier otra información suministrada a través del Sitio Web, llamadas telefónicas y/o visitas presenciales</li>
+          </ul>
+
+          <p>Igualmente, autorizo a CENET, a entregar toda la información relacionada con la operación aprobada a mi favor a sus agentes comerciales, a las personas que realicen la cobranza de su cartera, a quienes CENET, enajene la cartera y a terceros con quienes tengan una relación contractual a título de mandato o similar.</p>
+
+          <p>Teniendo en cuenta esta autorización y en atención a la aplicación de la <strong>Ley 1581 de 2012</strong>, sus decretos reglamentarios y demás normas que lo modifiquen complementen o aclaren, el titular del dato, por medio del presente documento, imparte de manera previa, expresa e informada la siguiente autorización a CENET, para el manejo de mi información, con los siguientes propósitos:</p>
+
+          <ol class="mx-2">
+            <li>El desarrollo de todas las operaciones propias del objeto social de CENET como sistema de negociación electrónica.</li>
+            <li>Actualizar, verificar y complementar mis datos personales y de contacto, tales como celular, dirección, teléfono fijo y correo electrónico.</li>
+            <li>Administrar la información de contacto de las personas naturales y jurídicas para las actividades propias del objeto social de la entidad.</li>
+            <li>Recibir, verificar, evaluar y filtrar las solicitudes a través de un análisis de riesgo y viabilidad financiera creado y operado por CENET.</li>
+            <li>La materialización, si es el caso, de las cláusulas sobre garantías mobiliarias y Cobros judiciales y extrajudiciales.</li>
+            <li>Realizar la gestión de cobranza judicial y extrajudicial, así como realizar investigaciones de bienes y localización, para obtener el pago de las obligaciones a su favor</li>
+            <li>Tramitar la apertura de la cuenta del Usuario en el Sitio Web de CENET.</li>
+            <li>Realizar la intermediación entre los tenedores legítimos y los potenciales compradores de la factura electrónica de venta como título valor.</li>
+            <li>Validar información para cumplimiento de las políticas internas, acerca del conocimiento del cliente y administración de riesgos SARLAFT.</li>
+            <li>Realizar trámites administrativos internos de CENET, tales como reportes contables, auditorías y facturación.</li>
+            <li>Realizar análisis estadísticos e investigaciones comerciales, de riesgos, de mercado, interbancarias y financieras de las empresas vinculadas.</li>
+            <li>Enviar al correo físico, electrónico, celular o dispositivo móvil vía mensajes de texto (SMS y/o MMS) o a través de cualquier otro medio análogo y/o digital creado o por crearse, información comercial, publicitaria sobre los productos y/o servicios, eventos de tipo comercial o no de estos, con el fin de informar sobre campañas de carácter comercial o publicitario, adelantados por la entidad o conjuntamente con sus aliados de negocios.</li>
+            <li>Crear y alimentar bases de datos para los fines comerciales expuestos y en general para el desarrollo del objeto social de CENET.</li>
+            <li>Por último, la atención de solicitudes, quejas y reclamos.</li>
+          </ol>
+
+          <p>Autorizo que mis datos personales serán almacenados con el fin de lograr una eficiente comunicación mientras se encuentre vigente la relación comercial; los titulares de la información podrán comunicarse al correo electrónico [info@mifactoring.com] para tener acceso a su información, para acreditar el tratamiento que se les está dando a sus datos y para presentar reclamos o solicitar su actualización, rectificación o supresión.</p>
+
+          <p>Adicionalmente, declaro haber leído cuidadosamente el contenido de este documento y haberlo comprendido a cabalidad, razón por la cual entiendo su alcance e implicaciones y acepto expresamente: i) El servicio de financiamiento que ofrece CENET, y ii) la Política de Privacidad que se encuentra en el siguiente enlace: <a href="www.mifactoring.com/Politica_de_privacidad"><strong>www.mifactoring.com/Politica_de_privacidad</strong></a>. </p>
+
+          <p>Teniendo en cuenta lo anterior, autorizo de manera voluntaria, previa, explícita, informada e inequívoca a CENET para que de forma directa o a través de sus filiales, subsidiarias, vinculadas económicas, trabajadores, contratistas, asociados y/o aliados comerciales; realice el tratamiento de mis datos personales y de la persona jurídica a quien represento(esto último en el caso de tratar persona jurídica)  de acuerdo con su Política de Tratamiento de Datos Personales, para los fines relacionados con su objeto social y en especial para fines legales, contractuales, comerciales y demás descritos en la su Política de Tratamiento de Datos Personales. </p>
+
+          <p><strong>Mensaje de datos:</strong> La información contenida en el presente documento, goza de plena validez a la luz del artículo 5 de la Ley 527 de 1999, por medio del cual se reconoce jurídicamente los efectos de los mensajes de datos.  </p>
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Privacy -->
+  <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privacyModalLabel">Política de privacidad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion accordion-flush" id="accordionFlushPrivacy">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-privacy-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseOne" aria-expanded="false" aria-controls="flush-privacy-collapseOne">
+                    1.	Definiciones
+                </button>
+              </h2>
+              <div id="flush-privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingOne" data-bs-parent="#accordionFlushPrivacy">
+                <div class="accordion-body">
+                    
+                    <p>Para la presente política, se tomarán las definiciones descritas en la Ley 1581 de 2012, Título I, Artículo 3:</p>
+
+                    <ul>
+                        <li><strong>Autorización:</strong> Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales;</li>
+                        <li><strong>Base de Datos:</strong> Conjunto organizado de datos personales que sea objeto de Tratamiento;</li>
+                        <li><strong>Dato personal:</strong> Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables;</li>
+                        <li><strong>Dato público:</strong> Es el dato que no sea semiprivado, privado o sensible. Son considerados datos públicos, entre otros, los datos relativos al estado civil de las personas, a su profesión u oficio ya su calidad de comerciante o de servidor público. Por su naturaleza, los datos públicos pueden estar contenidos, entre otros, en registros públicos, documentos públicos, gacetas y boletines oficiales y sentencias judiciales debidamente ejecutoriadas que no estén sometidas a reserva. </li>
+                        <li><strong>Datos sensibles:</strong> Se entiende por datos sensibles, aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido político o que garanticen los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual, y los datos biométricos. </li>
+                        <li><strong>Encargado del Tratamiento:</strong> Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento;</li>
+                        <li><strong>Responsable del Tratamiento:</strong> Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos;</li>
+                        <li><strong>Titular:</strong> Persona natural cuyos datos personales sean objeto de Tratamiento;</li>
+                        <li><strong>Tratamiento:</strong> Cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión.</li>
+                    </ul>
+                    </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseTwo" aria-expanded="false" aria-controls="flush-privacy-collapseTwo">
+                    2.	Objetivo
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingTwo" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    <p>La presente Política de Tratamiento de Datos Personales, tiene el fin de regular la recolección, almacenamiento, uso, circulación y supresión de datos personales que maneje CENET (o la que haga sus veces), así mismo, tiene en cuenta los mandatos de la Ley 1581 de 2012, decretos y demás normatividad que la complemente, modifique o derogue.</p>  
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseThree" aria-expanded="false" aria-controls="flush-privacy-collapseThree">
+                    3.	Alcance
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingThree" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    <p>La Política de Tratamiento de Datos Personales de CENET (o la que haga sus veces) abarca todos los aspectos administrativos, organizacionales y de control que deben ser cumplidos por los directivos, colaboradores, contratistas y terceros que tengan relación directa con la empresa, así mismo, se aplicará a todas las Bases de Datos y/o Archivos que contengan datos personales que sean objeto de Tratamiento, a través de todos sus canales de servicios y operaciones.</p>
+
+                    <p>La política es comunicada a todos los clientes, colaboradores, terceros y ciudadanía en general, a través de los medios de comunicación dispuestos por CENET.</p>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseFour" aria-expanded="false" aria-controls="flush-privacy-collapseFour">
+                    4. Principios Rectores
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingFour" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    <p>CENET, para el tratamiento de los datos personales, aplicará los principios definidos en la Ley 1582 de 2012, Artículo 4:</p>
+
+                    <ul>
+                        <li><strong>Principio de legalidad en materia de Tratamiento de datos:</strong> El Tratamiento a que se refiere la presente ley, es una actividad reglada que debe sujetarse a lo establecido en ella y en las demás disposiciones que la desarrollen;</li>
+                        <li><strong>Principio de finalidad:</strong> El Tratamiento debe obedecer a una finalidad legítima, de acuerdo con la Constitución y la Ley; la cual debe ser informada al Titular;</li>
+                        <li><strong>Principio de libertad:</strong> El Tratamiento sólo puede ejercerse con el consentimiento, previo, expreso e informado del Titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que releve el consentimiento;</li>
+                        <li><strong>Principio de veracidad o calidad:</strong> La información sujeta a Tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el Tratamiento de datos parciales, incompletos, fraccionados o que induzcan a error;</li>
+                        <li><strong>Principio de transparencia:</strong> En el Tratamiento, debe garantizarse el derecho del Titular a obtener del Responsable del Tratamiento o del Encargado del Tratamiento, en cualquier momento y sin restricciones, información acerca de la existencia de datos que le conciernan;</li>
+                        <li><strong>Principio de acceso y circulación restringida:</strong> El Tratamiento se sujeta a los límites que se derivan de la naturaleza de los datos personales, de las disposiciones de la presente ley y la Constitución. En este sentido, el Tratamiento sólo podrá hacerse por personas autorizadas por el Titular y/o por las personas previstas en la presente ley. Los datos personales, salvo la información pública, no podrán estar disponibles en Internet u otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares o terceros autorizados conforme a la presente ley;</li>
+                        <li><strong>Principio de seguridad:</strong> La información sujeta a Tratamiento por el Responsable o Encargado, se deberá manejar con las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento;</li>
+                        <li><strong>Principio de confidencialidad:</strong> Todas las personas que intervengan en el Tratamiento de datos personales, que no tengan la naturaleza de públicos, están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que comprende el Tratamiento, pudiendo sólo realizar suministro o comunicación de datos personales cuando ello corresponda al desarrollo de las actividades autorizadas en la presente ley y en los términos de la misma. </li>
+                    </ul>                                
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseFive" aria-expanded="false" aria-controls="flush-privacy-collapseFive">
+                    5. Presunción entorno a los datos personales establecidos. 
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingFive" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                      <p>CENET presume que los datos proporcionados han sido introducidos por su titular, o aquel que reviste de las calidades y la posibilidad de obligarse a nombre propio o de la persona jurídica que representa o que se encuentra debidamente autorizada para iniciar sus operaciones dentro del sistema de negociación electrónica, presumiendo a su vez que los datos aportados son correctos y exactos, que los mismos corresponden ya sea a la persona natural la cual se presume de igual manera que es mayor de edad o a la persona jurídica identificada, presunción que se genera por el simple hecho de ser usuario de CENET.</p>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseSix" aria-expanded="false" aria-controls="flush-privacy-collapseSix">
+                    6. Tratamiento de los Datos
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingSix" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                      <p><strong>6.1.</strong>	Tratamiento de Datos Sensibles</p>
+
+                      <p>El Tratamiento de datos personales sensibles, cuando dicho Tratamiento sea posible conforme a lo establecido en el artículo 6 de la Ley 1581 de 2012, deberán cumplirse las siguientes obligaciones:</p>
+
+                      <ul>
+                          <li>Informar al titular que, por tratarse de datos sensibles, no está obligado a autorizar su Tratamiento.</li>
+                          <li>Informar al Titular de forma explícita y previa, además de los requisitos generales de la autorización para la recolección de cualquier tipo de dato personal, cuáles de los datos que serán objeto de Tratamiento son sensibles y la finalidad del Tratamiento, así como obtener su consentimiento expreso.</li>
+                          <li>Tener la autorización por parte del titular para el Tratamiento de sus datos personales.</li>
+                          <li>Salvaguardar el interés vital de los titulares, en caso de que estos se encuentren física o jurídicamente incapacitados. En estos eventos, los representantes legales deberán otorgar su autorización.</li>
+                          <li>Servir como soporte necesario para el reconocimiento, ejercicio o defensa de un derecho en un proceso judicial.</li>
+                      </ul>
+
+                      <p><strong>6.2.</strong>	Tratamiento de las Bases de Datos</p>
+
+                      <p>CENET velará por cumplir con la normatividad vigente y aplicable con respecto al Registro Nacional de Bases de Datos y tendrá en cuenta la información mínima, la cual se enuncia a continuación:</p>
+
+                      <ul>
+                          <li>Datos de identificación, ubicación y contacto del Responsable del Tratamiento de la base de datos.</li>
+                          <li>Datos de identificación, ubicación y contacto del o de los Encargados del Tratamiento de la base de datos.</li>
+                          <li>Canales para que los titulares ejerzan sus derechos.</li>
+                          <li>Nombre y finalidad de la base de datos.</li>
+                          <li>Forma de Tratamiento de la base de datos (manual y/o automatizada), y</li>
+                          <li>Política de Tratamiento de la información.</li>
+                      </ul>
+
+                        <p>La Superintendencia de Industria y Comercio, como autoridad de protección de datos personales, podrá establecer dentro del Registro Nacional de Bases de Datos información adicional a la mínima prevista en el Decreto 886 de 2014, acorde con las facultades que le atribuyó la Ley 1581 de 2012 en el literal h) del artículo 21.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseSeven" aria-expanded="false" aria-controls="flush-privacy-collapseSeven">
+                    7.	Del Tratamiento
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingSeven" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    <p>CENET utilizará los datos sensibles recolectados exclusivamente para fines comerciales, contractuales y operativos relacionados con sus líneas de negocios, la misión interna, y/o procesos administrativos internos, en cumplimiento de su misión, legislación vigente y seguridad de la información. Para tal propósito, CENET ha adoptado los niveles de seguridad adecuados a los datos facilitados por el usuario y/o cliente final, y, además, ha instalado todos los medios y medidas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y extracción de estos.</p>
+                    
+                    <p>De acuerdo con lo anterior y a los tipos de Titulares de los datos sensibles, tendrán las siguientes finalidades en su tratamiento:</p>
+
+                    <p><strong>7.1.</strong> Respecto a los datos personales de nuestros clientes personas naturales o jurídicas </p>
+
+                    <ul>
+                        <li>CENET podrá reportar, procesar, estudiar, analizar, solicitar y divulgar a cualquier central u operador de información, toda la información como cliente de CENET, entre otros, según las finalidades del tratamiento de datos previstos en esta Política.</li>
+                        <li>Reconoce que CENET podrá enviar comunicaciones y mensajes recíprocos, a través de las herramientas de comunicación provistas en la página web, en el que prevalecerán como principios rectores la buena fe, el correcto tratamiento y uso de los datos para los fines propuestos, relacionados con las operaciones en las cuales las partes pueden ser obligados contractuales y el deber de mutua colaboración entre el Usuario y CENET.</li>
+                        <li>Enviará a través del correo electrónico, mensaje de texto (SMS) y/ o cualquier otro medio suministrado a partir de la información otorgada por el cliente, las comunicaciones emanadas de las operaciones de negociación electrónica.</li>
+                        <li>Utilizará los datos sensibles recolectados exclusivamente para fines propios y operativos relacionados con procesos relacionados con sus operaciones de factoring, y/o cualquier otra relacionada con sus soluciones financieras digitales proveídas como sistema de negociación electrónica, además de los procesos de índole administrativo interno, en cumplimiento de su misión, normatividad vigente y de gestión de seguridad de la información.</li>
+                        <li>Controlará el acceso a su plataforma y podrá, en cualquier momento y a su solo árbitro, disponer la suspensión o inhabilitación temporal o definitiva para el acceso del usuario (persona natural o jurídica) a la página web a partir de la información por el suministrada. </li>
+                        <li>Dentro de sus servidores podrá hacer uso de cookies, las cuales se instalarán automáticamente en el navegador empleado por el usuario, pero de ninguna manera almacenará ningún tipo de información relativa a este.</li>
+                        <li>Utilizar los distintos servicios a través del sitio web de CENET, incluyendo descargas de contenidos, contratos y formatos.</li>
+                        <li>Para la determinación de obligaciones pendientes, la consulta de información financiera e historia crediticia y el reporte a centrales de información de obligaciones incumplidas, respecto de sus deudores, si se considera pertinente y acorde a la naturaleza de la operación financiera.</li>
+                        <li>CENET utilizará los datos sensibles recolectados exclusivamente para fines operacionales, contractuales, comerciales propios,  relacionados con procesos  de negociación electrónica destinada a empresas que desean acceder a estos servicios a través de la plataforma dispuesta para tal fin, cualquier otro tipo de solución financiera desarrollada por CENET de manera individual o con aliados estratégicos, en sus diversas líneas de acceso y de carácter administrativo interno, en cumplimiento de su misión, normatividad vigente y de gestión de seguridad de la información.</li>
+                        <li>Controlar el acceso a su plataforma y podrá a su libre disposición limitar el ingreso y acceso a su página web y con ello acceder a la generación de operaciones de factoring dentro de su servidor.</li>
+                        <li>Utilizar los distintos servicios a través del sitio web de CENET (o la página dispuesta para tal propósito), incluyendo acceso al sistema de negociación electrónica, información relativa a la materialización de la operación y los contratos que devengan del mismo, a la descarga de todo tipo de contratos, contenidos, formatos y aceptaciones. </li>
+                    </ul>
+
+                    <p><strong>7.2.</strong> Respecto a los datos de Entes de Control:</p>
+
+                    <ul>
+                        <li>CENET utilizará los datos sensibles recolectados exclusivamente para fines propios y operativos relacionados con procesos administrativos internos, en cumplimiento de su misión, normatividad vigente y de gestión de seguridad de la información.</li>
+                        <li>Utilizará los distintos servicios a través del sitio web de CENET, incluyendo descargas de contenidos y formatos.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseEight" aria-expanded="false" aria-controls="flush-privacy-collapseEight">
+                    8.	Derechos de los Clientes, Colaboradores y Terceros
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingEight" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                      <p>Los clientes, colaboradores y terceros que tengan registrada información personal en las bases de datos de CENET o sus causahabientes tienen derecho a lo descrito en la Ley 1582 de 2012, Titulo IV, Artículo 8, la cual enuncia los siguientes derechos:</p>
+
+                      <ul>
+                          <li>Conocer, actualizar, rectificar, oponerse y cancelar sus datos personales frente a los Responsables del Tratamiento o Encargados del Tratamiento. Este derecho se podrá ejercer, entre otros frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado; por lo tanto; el usuario será el único y exclusivo responsable de la veracidad y exactitud de sus datos personales.
+                            <ol>
+                                <li>Para lo anterior, el titular debe registrar su reclamo con la identificación del Titular, la descripción de los hechos que dan lugar al reclamo, la dirección, y acompañando los documentos que se quiera hacer valer. Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes a la recepción del reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido del reclamo.</li>
+                                <li>En caso de que quien reciba el reclamo no sea competente para resolverlo, dará traslado a quien corresponda en un término máximo de dos (2) días hábiles e informará de la situación al interesado.</li>
+                                <li>Una vez recibido el reclamo completo, éste se catalogará con la etiqueta “en revisión” y el motivo del mismo en un término no mayor a dos (2) días hábiles. Dicha etiqueta se mantendrá hasta que el reclamo sea decidido.</li>
+                                <li>El término máximo para atender el reclamo será de quince (15) días hábiles, contados a partir del día siguiente a la fecha de su recibo. Cuando no fuere posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su reclamo, la cual en ningún caso podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término.</li>
+                            </ol>
+                        </li>
+                          <li>Solicitar prueba de la autorización otorgada al Responsable del Tratamiento salvo cuando expresamente se exceptúe como requisito para el Tratamiento, de conformidad con lo previsto en el artículo 10 de la ley 1581 de 2012.</li>
+                          <li>Ser informado por el Responsable del Tratamiento o el Encargado del Tratamiento, previa solicitud, respecto del uso que les ha dado a sus datos personales;</li>
+                          <li>Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la presente ley y las demás normas que la modifiquen, adicionen o complementen;</li>
+                          <li>Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. La revocatoria y/o supresión procederá cuando la Superintendencia de Industria y Comercio haya determinado que en el Tratamiento el Responsable o Encargado han incurrido en conductas contrarias a esta ley y a la Constitución; </li>
+                          <li>Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento.</li>
+                      </ul>
+
+                      <p><strong>8.1.</strong>	Área, Medios y Procedimiento para el Ejercicio de los Derechos de Tratamiento de la Información</p>
+
+                      <P>CENET en calidad de responsable y encargado del tratamiento de la información de datos personales asume, a través de Gerente de Proyecto, la función de Protector de Datos Personales y del Profesional de Seguridad de la Información. Por tal motivo, el Gerente de Proyecto, en ejercicio de dichas funciones, delega la responsabilidad de dar trámite de las solicitudes de los Clientes, Colaboradores y Terceros a los directores o colaboradores pertinentes dependiendo de la solicitud, para el ejercicio de los derechos a que se refiere la Ley 1581 de 2012 y el Decreto 1377 de 2013. </P> 
+
+                    <P>Considerando lo anterior, los Titulares o Propietarios de Información podrán realizar peticiones, consultas y reclamos sobre el tratamiento de sus datos a través de los siguientes medios o puntos de contacto:</P>
+
+                    <P>Buzón de contáctenos de la página web: <strong><a href="http://www.mifactoring.com/contactenos">www.mifactoring.com/contactenos</a></strong></P>
+
+                    <p>Correo electrónico: <strong><a href="mailto:info@mifactoring.com">info@mifactoring.com</a></strong></p>
+
+                    <p>Teléfono: [0000000]</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseNine" aria-expanded="false" aria-controls="flush-privacy-collapseNine">
+                    9.	Transferencia y Transmisión de Datos Personales a nivel Internacional. 
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingNine" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    <p>CENET, en el tratamiento de datos personales, prohíbe su transferencia a países que no proporcionen niveles adecuados de protección de datos de acuerdo con los estándares establecidos por la Superintendencia de Industria y Comercio, los cuales en ningún caso podrán ser inferiores a los que la Ley 1581 de 2012 exige a sus destinatarios y solamente se realizará cuando exista autorización correspondiente del Titular. </p>
+
+                    <p>Esta prohibición no regirá cuando se trate de:</p>
+
+                    <ul>
+                        <li>Información respecto de la cual los Clientes, Colaboradores y Terceros hayan otorgado su autorización expresa e inequívoca para la transferencia, para llevar a cabo las operaciones de factoring y demás soluciones financieras de las cuales formen parte integral del portafolio de servicios de CENET.</li>
+                        <li>Transferencias bancarias o bursátiles, conforme a la legislación que les resulte aplicable.</li>
+                        <li>Transferencias acordadas en el marco de tratados internacionales en los cuales la República de Colombia sea parte, con fundamento en el principio de reciprocidad.</li>
+                        <li>Transferencias necesarias para la ejecución de un contrato entre los Clientes, Colaboradores y Terceros con CENET, o para la ejecución de medidas precontractuales siempre y cuando se cuente con la autorización del Titular.</li>
+                        <li>Transferencias legalmente exigidas para la salvaguardia del interés público, o para el reconocimiento, ejercicio o defensa de un derecho en un proceso judicial.</li>
+                        <li>Las disposiciones descritas sobre la transferencia de datos personales, serán aplicables para todos los datos personales incluyendo aquellos contemplados en la Ley 1266 de 2008.</li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-privacy-headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-privacy-collapseTen" aria-expanded="false" aria-controls="flush-privacy-collapseTen">
+                    10.	Vigencia de Política General de Tratamiento de Datos de Personales y Bases de Datos 
+                  </button>
+                </h2>
+                <div id="flush-privacy-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-privacy-headingTen" data-bs-parent="#accordionFlushPrivacy">
+                  <div class="accordion-body">
+                    
+                    <p>CENET ha aplicado en debida forma la Política de Tratamiento de la Información de Datos Personales a partir del [18 de enero de 2021].  El presente documento actualiza y desarrolla dicha política a partir del [19 de febrero de 2021]. </p>
+
+                    <p>Por su parte, las bases de datos tendrán una vigencia igual al periodo en que se mantenga la finalidad o finalidades del tratamiento en cada base de datos, o el periodo de vigencia que señale una causa legal, contractual o jurisprudencial de manera específica. Cumpliendo lo anterior, CENET mantendrá sus bases de datos en custodia. </p> 
+
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Terms -->
+    <div class="modal fade" id="terms" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Términos y condiciones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="accordion accordion-flush" id="accordionFlushTerms">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      1. Condiciones de Uso
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushTerms">
+                  <div class="accordion-body">
+                      <p>Bienvenido al sitio en Internet de <strong>CENET</strong>, cuya página corporativa se ubica en <a href="http://www.mifactoring.com/" target="_blank"><strong>www.mifactoring.com</strong></a> en adelante e indistintamente "el Sitio". </p>
+
+                      <p>La Plataforma de <strong>CENET</strong> es una Plataforma de negociación electrónica, por ende, mediante la provisión de infraestructura, servicios, sistemas, mecanismos y/o procedimientos electrónicos, realizamos actividades de intermediación entre los tenedores legítimos y los potenciales compradores de la factura electrónica de venta como título valor. Debido a ser sistema de negociación, su función principal estará el registrar eventos directamente en el RADIAN, señalados por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales – DIAN.</p>
+          
+                      <p>El uso del Sitio está sujeto a los siguientes términos y condiciones de uso, en adelante los "Términos y Condiciones", que deberán ser cumplidas por los usuarios, adelante indistintamente "Usted", “Cliente” o el "Usuario". Los términos “cliente” o "usuario" tal como se usan aquí, se refieren a todas las personas naturales o jurídicas o entidades de cualquier naturaleza, que accedan a este Sitio por cualquier razón.</p>
+          
+                      <p><strong>CENET</strong> revisa periódicamente los Términos y Condiciones, pudiendo modificarlos, produciendo sus efectos desde el momento en que son introducidos al texto. Le recomendamos revisar periódicamente los Términos y Condiciones ya que, para todos los efectos legales, por el solo ingreso a los contenidos, reconocemos que usted ha revisado y que está de acuerdo con todos los Términos y Condiciones.</p>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      2. Registro de Usuario
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushTerms">
+                  <div class="accordion-body">
+                      <p><strong>2.1.</strong>	El Usuario que cumpla con los requisitos precedentemente establecidos para utilizar la aplicación y/o los servicios de <a href="http://www.mifactoring.com/" target="_blank"><strong>www.mifactoring.com</strong></a> se someterá a la verificación de su identidad,  la cual podrá gestionar fuentes públicas o privadas; todo para lo cual requerirá su previa autorización de tratamiento de datos personales.</p>
+
+              <p><strong>2.2.</strong> 
+                Con posterioridad a ello, a través del Sitio o por medio del correo electrónico que provea, comunicará al Usuario -inmediatamente- que ha creado un Usuario o “cuenta”.
+              </p>
+              <p><strong>2.3.</strong>
+                El Usuario deberá, como condición ineludible y de procedencia, completar el formulario de registro que se pone a su disposición informando, con el carácter de declaración jurada, datos tales, pero sin limitarse, como nombre, apellido, tipo de documento, número de documento, dirección física, dirección de correo electrónico y número de celular.                 
+              </p>
+              <p><strong>2.4.</strong>
+                Una vez sea desarrollado el procedimiento de registro, éste será verificado. De esta forma, habiendo completado su proceso de vinculación, mediante una asociación de su correo electrónico en la Plataforma con un perfil, ya sea persona natural o persona jurídica, se iniciará su procedimiento de verificación.              
+              </p>
+              <p><strong>2.5.</strong>
+                En caso de persona jurídica, verificado el usuario, <strong>CENET</strong> lo identificará como el representante legal o administrador autorizado de una persona jurídica, quien será responsable por la empresa a la que representa ante terceros y por el uso de la cuenta de usuario asignada en la plataforma. Es necesario anotar que solo existe una cuenta por empresa, es decir, un solo representante legal al que se le asocia este perfil. Este usuario es el encargado de definir los permisos o grupos de permisos para un cliente secundario. Sus límites de compra y venta serán definidos en la plataforma.              
+              </p>
+              <p><strong>2.6.</strong>
+                Para persona jurídica, dentro del perfil de persona jurídica, existen dos (2) modalidades bajo las cuales un usuario puede realizar su registro: 
+              </p>
+              <ul class="mx-2">
+                <li>Representante Legal de una empresa; y</li>
+                <li>Administrador autorizado</li>
+              </ul>
+              <p>Solo éstos podrán suministrar la documentación requerida de la compañía.</p>
+              <p><strong>2.7.</strong>
+                El usuario tendrá la posibilidad, dependiendo de las características particulares de cada uno, figurar como tenedor de facturas, ofrecerlas en el mercado y así mismo, comprar facturas cuando lo desee. Las facturas electrónicas son negociadas desde la plataforma, lo que implica que todo el proceso de endoso a la DIAN para validación, entrega al adquirente y captura de aceptación, se realizan haciendo uso de los servicios de la plataforma.             
+              </p>
+              <p><strong>2.8.</strong>
+                El Usuario garantizará y responderá en cualquier caso por la veracidad, exactitud, vigencia y autenticidad de los datos facilitados y se comprometerá a mantenerlos debidamente actualizados. Adicionalmente, posterior a tal manifestación, autorizará a CENET a confirmar los datos suministrados, acudiendo a entidades públicas, compañías especializadas o centrales de riesgo.              
+              </p>
+              <p><strong>2.9.</strong>
+                Un Usuario podrá interactuar con la Plataforma, de acuerdo con los permisos establecidos por el cliente principal de la entidad a la que se encuentre suscrito. Por ende, CENET podrá autorizar usuarios, asignándoles los permisos que mejor se ajusten al perfil deseado, de acuerdo con la definición de sus características y si estos permisos le son otorgados.            
+              </p>
+              <p>De manera general, los permisos pueden ser: </p>
+              <ul class="mx-2">
+                <li>Ver información pública de las facturas </li>
+                <li>Ver información pública de las instituciones </li>
+                <li>Suscribirse a eventos relacionados con las facturas </li>
+                <li>Llevar a cabo el proceso de registro a la Plataforma otorgando información solicitada y documentos. </li>
+                <li>Consultar su perfil.</li>
+                <li>Enviar facturas a DIAN para validación previa. </li>
+                <li>Obtenida la validación, entregar a adquirente pagador. </li>
+                <li>Capturar aceptación. </li>
+                <li>Cargar facturas en el sistema. </li>
+                <li>Aceptar facturas para la venta donde es pagador. </li>
+                <li>Agregar descuentos tributarios y otros descuentos en las facturas donde es tenedor o pagador. </li>
+                <li>Activar o desactivar facturas para la venta. </li>
+                <li>Ver transacciones en las que la institución actúa como una de las partes. </li>
+                <li>Confirmar el pago de las transacciones y el pago final de las facturas.</li>
+              </ul>
+
+              <p><strong>2.10.</strong>
+                CENET podrá solicitar al Usuario la presentación o envío de cualquier comprobante y/o dato adicional que considere necesario a efectos de corroborar y/o confirmar y/o verificar sus datos personales.              
+              </p>
+              <p><strong>2.11.</strong>
+                Una vez activada la Cuenta del Usuario, éste tendrá acceso a la aplicación y/o los servicios, mediante la introducción de su nombre y contraseña.             
+              </p>
+              <p><strong>2.12.</strong>
+                2.12.	El Usuario podrá modificar o sustituir su contraseña en cualquier momento y se obliga a preservar tal contraseña bajo absoluta confidencialidad y, a no revelarla o compartirla con otras personas bajo ningún concepto.             
+              </p>
+              <p><strong>2.13.</strong>
+                Queda suficientemente establecido que el Usuario es exclusivo responsable por el uso de la contraseña y asume las consecuencias derivadas de ello. No obstante ello, el Usuario se obliga a notificar a CENET en forma inmediata y por medio fehaciente, de cualquier uso no autorizado de su contraseña y/o del ingreso al Sitio y/o a su Cuenta por terceros no autorizados por él.              
+              </p>
+              <p><strong>2.14.</strong>
+                CENET se reserva el derecho a rechazar cualquier Usuario, así como el de cancelar una activación previamente aceptada, sin que esté obligado a comunicar o exponer las razones de su decisión y sin que ello genere derecho alguno a favor del Usuario.           
+              </p> 
+              </div>
+              </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      3. Procedimiento de vinculación del Usuario
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushTerms">
+                  <div class="accordion-body">
+                      <p>Para acceder al portafolio de servicios que ofrece la plataforma de CENET, los usuarios deben completar un proceso de vinculación a la plataforma y convertirse en usuarios.</p>
+
+            <p>La vinculación en la plataforma, es un proceso completamente automatizado y digital, es decir, los usuarios no deben llenar formularios físicos de ningún tipo ni realizar trámites de manera presencial. Los pasos para la vinculación se relacionan continuación:</p>
+
+              <p><strong>3.1.</strong>
+                El usuario debe inscribir el correo electrónico que desee vincular a la cuenta, un e-mail de verificación es enviado al correo electrónico del usuario y sólo podrá continuar con el proceso una vez haya verificado su cuenta de correo.   
+              </p>
+              <p><strong>3.2.</strong>
+                Para persona natural, el usuario debe relacionar su número de documento de identidad, [dirección de domicilio y número telefónico; así mismo deberá adjuntar una imagen o foto del usuario y una imagen frontal y posterior de su documento de identidad, para que el sistema realice internamente las siguientes validaciones: 
+              </p>
+                <ul class="mx-2">
+                  <li>La validación del documento de identidad </li>
+                  <li>La validación de la titularidad del documento</li>
+                  <li>El sistema validará el número de celular del usuario enviando un código de verificación que debe ingresar en la plataforma para confirmar que tiene acceso a ese número.</li>
+                </ul>
+
+              <p><strong>3.3.</strong>
+                Para registrar una compañía en el sistema, la plataforma le solicitará al usuario el NIT de la empresa y un teléfono de contacto.  
+              </p>
+              <p><strong>3.4.</strong>
+                Si la empresa no ha sido creada previamente en la plataforma, y el usuario que realiza la vinculación es el representante legal, el sistema le permite al usuario continuar al formulario de información de la empresa, en donde se le solicita que relacione la información de la compañía. 
+              </p>
+              <p><strong>3.5.</strong>
+                Debido a que nosotros realizamos la validación con base de datos públicas y/o privadas, es posible que parte de la información pueda ser actualizada de manera automática dentro del registro. 
+              </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      4.	Información Contenida en el Sitio
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                        <p>La información contenida en el sitio, recaudará información sobre usted o su empresa, solamente cuando considere que es razonablemente necesario o útil para el procesamiento o administración de productos y servicios que usted ha solicitado.</p>
+
+                          <p>Nosotros recaudamos información privada de las siguientes fuentes: </p>
+
+                          <ul>
+                              <li>Información recibida en solicitudes, encuestas, inscripciones en línea, u otras formas.</li>
+                              <li>Información que recibimos por parte de nuestros clientes</li>
+                              <li>Agencias de reportes y de débitos, proveedores de información demográfica y de mercadotecnia, y otras instituciones, incluyendo información relacionada a su historial crediticio.</li>
+                          </ul>
+
+
+                          <p>El usuario, a través de las distintas áreas que forman parte del sitio web, puede visitar y obtener información, manejar una serie de aplicativos o herramientas y contratar servicios. Con base en las consultas, nuestros clientes y/o usuarios, generan las invitaciones para las operaciones de negociación electrónica dentro del sistema de RADIAN, para el endoso de la factura. </p>
+
+                          <p>Nuestros clientes y usuarios no retienen, difunden, almacenan ni utilizan información para ningún propósito diferente a los enunciados en el procedimiento. La información recibida podrá ser utilizada en el desarrollo de todas las operaciones propias del objeto social de CENET, de sus aliados comerciales, de negocio y compañías que participan en operaciones.</p>
+
+                          <p>Todos los datos facilitados por parte de los usuarios y visitantes de este sitio web, serán tratados con absoluta confidencialidad. Tanto las entidades responsables de los ficheros como quienes intervengan en cualquier fase del tratamiento y las entidades a quienes les hayan sido comunicados, al amparo de la autorización conferida por el usuario y la cláusula de confidencialidad, se hayan sometidos a estos términos; comprometiéndose expresamente a adoptar los niveles de protección y las medidas necesarias de índole técnica y organizativa que garanticen la seguridad de los datos de carácter personal y comercial, eviten su alteración, mal uso, pérdida, robo, tratamiento o acceso no autorizado, y a nivel externo como en el marco de la propia estructura y personal dependiente, habida cuenta del estado de la tecnología, la naturaleza de los datos almacenados y los riesgos a que están expuestos, provengan éstos de la acción humana o del medio físico o natural.</p>
+
+                          <p>Todo ello y, no obstante, el usuario debe ser consciente y se le advierte expresamente dentro de la exoneración de responsabilidad de CENET, que las medidas de seguridad en Internet no son inexpugnables.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      5. Seguridad
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>CENET maneja unos estándares altos de seguridad para la protección de datos de carácter personal y empresarial de los Usuarios, por lo cual asegura la confidencialidad de los mismos, y que en ninguna circunstancia transferirá o cederá o de otra manera proveerá dichos datos a persona alguna, salvo las ordenadas por autoridad judicial autoridad administrativa, de acuerdo con la legislación vigente o que el Usuario mismo lo autorice o por autorización expresa del titular.</p>
+
+                      <p>Gran parte de las violaciones a los sistemas de información ocurren por el mal manejo que da el usuario de sus cuentas, por lo cual le informamos que es responsable por mantener la confidencialidad de su Password o contraseña. </p>
+
+                      <p>CENET está activamente involucrado con las actuales iniciativas comerciales destinadas a preservar el derecho personal de la privacidad en Internet; hemos adoptado y seguiremos adoptando las medidas técnicas y organizativas necesarias para garantizar la seguridad e integridad de los datos, así como para evitar su alteración, pérdida, tratamiento o acceso no autorizado.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      6.	Consideraciones Técnicas y de Seguridad del Usuario
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>Al aceptar estos Términos y Condiciones, el usuario es responsable por: </p>
+
+                   
+                          <p><strong>6.1.</strong> Deshabilitar el Acrobat JavaScript y la ejecución automática de URLs en las opciones de administración del lector de PDF si este lo permite. </p>
+                          <p><strong>6.2.</strong> Mantener actualizado a su última versión los programas lectores de PDF y navegadores web.  </p>
+                          <p><strong>6.3.</strong> Mantener actualizado el antivirus del equipo.  </p>
+                          <p><strong>6.4. </strong>Realizar una configuración adecuada del Firewall, para bloquear la ejecución de links externos sospechosos desde los equipos de la organización.  </p>
+                          <p><strong>6.5.</strong> Mantener el sistema operativo de su equipo de cómputo actualizado con los últimos paquetes de seguridad.  </p>
+                          <p><strong>6.6.</strong> Realizar una configuración adecuada del Firewall para bloquear la ejecución de links externos sospechosos desde los equipos de la organización.</p>
+                          <p><strong>6.7.</strong> Mantener el sistema operativo de su equipo de cómputo actualizado con los últimos paquetes de seguridad. </p>
+                          <p><strong>6.8.</strong> En cuanto a la versión móvil del aplicativo, aunque la Plataforma es desarrollada principalmente para ser usada desde navegadores de máquinas de escritorio, su arquitectura de tipo responsive, permite que se pueda acceder desde los navegadores de dispositivos móviles con total fluidez y funcionalidad.</p>
+                      
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      7.	Obligaciones del Usuario
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>Por el solo hecho de tener la calidad de tal, el Usuario se obliga, sin reservas ni restricciones de ningún tipo, a:</p>
+                    
+                          <p><strong>7.1.</strong> Registrar en la Plataforma información verídica y documentos reales que correspondan a su identidad </p>
+                          <p><strong>7.2.</strong> Hacer uso correcto del Sitio, sus servicios y contenidos bajo su exclusiva responsabilidad, respetando los Términos y Condiciones que regulan al mismo, la legislación vigente, la moral, las buenas costumbres, el orden público y cláusula de confidencialidad.  </p>
+                          <p><strong>7.3.</strong> Abstenerse de utilizar el Sitio y los servicios y contenidos, con fines o efectos ilícitos o que atenten contra los derechos o intereses de terceros. </p>
+                          <p><strong>7.4.</strong> Inhibirse de causar inutilización, saturación, deterioro o daño al Sitio, sus servicios y contenidos, o cualquier efecto que impida el normal uso de ellos por parte de los Usuarios </p>
+                          <p><strong>7.5.</strong> Privarse de reproducir, copiar, comercializar, ceder, recircular, retransmitir, distribuir, publicar o modificar los contenidos, salvo que se haya obtenido previamente autorización de parte de CENET</p>
+                          <p><strong>7.6.</strong> Responder de todo daño y/o perjuicio, de cualquier naturaleza, que pueda sufrir CENET como consecuencia del incumplimiento de cualquier obligación a las que queda sometido el Usuario por los Términos y Condiciones. </p>
+                          <p><strong>7.7.</strong> Si por aplicación de la legislación vigente, y en virtud de una resolución administrativa o de una sentencia judicial, CENET se vea en la obligación de indemnizar algún daño como consecuencia de la indebida utilización del Sitio por parte de un Usuario o del incumplimiento de los referidos Términos y Condiciones, el Usuario esté obligado a reembolsarla o indemnizarla, según sea el caso. </p>
+                          <p><strong>7.8.</strong> Garantizar y responder acerca de la veracidad, exactitud, vigencia y autenticidad de los datos personales y empresariales proporcionados por el Usuario, comprometiéndose a mantenerlos debidamente actualizados. </p>
+                              <p><strong>7.9.</strong> Contar con el hardware y software compatible con la Plataforma, al igual que contar con el acceso a Internet a su propio costo y riesgo, necesario para el uso adecuado de la Aplicación.</p>
+                    
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      8.	Derechos de CENET 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+
+                   <p><strong>8.1.</strong>	Los administradores de la Plataforma, tienen derecho a modificar el sitio web y su contenido, sin necesidad de consentimiento de los usuarios registrados en el sistema siempre que lo considere necesario. </p>
+
+                  <p><strong>8.2.</strong>	Tienen derecho a dar por terminado el Contrato de servicios tecnológicos suscrito con un usuario registrado previamente en la Plataforma, si éste ha incurrido en alguna de las causales de bloqueo de usuarios descrita en la sección Políticas de Bloqueo de usuario de este documento. </p>
+
+                  <p><strong>8.3.</strong>	 Los administradores de la Plataforma tienen derecho a solicitar la información que requieran para completar el proceso de registro de los usuarios. Lo anterior, de conformidad con los acuerdos relacionados con el tratamiento de datos personales establecidos en el contrato de servicios tecnológicos suscrito entre las partes.</p>
+
+                  <p><strong>8.4.</strong>	A modificar o eliminar, en forma unilateral, parcial o totalmente, tanto la disposición de los elementos que componen este Sitio, como su configuración general o particular, los servicios o contenidos o sus condiciones de acceso y utilización. </p>
+
+                  <p><strong>8.5.</strong>	A denegar o retirar el acceso a este Sitio, sus servicios y contenidos, en cualquier momento y sin aviso previo, a aquellos Usuarios que incumplan estos Términos y Condiciones. </p>
+
+                  <p><strong>8.6.</strong>	A poner término, suspender o interrumpir unilateralmente, en cualquier momento y sin aviso previo, la prestación del servicio del Sitio y/o de cualquiera de sus servicios o contenidos. </p>
+
+                  <p><strong>8.7.</strong>	A modificar los términos de los presentes Términos y Condiciones en cualquier momento.</p>
+
+                  <p><strong>8.8.</strong>	CENET se reserva el derecho a decidir si el bloqueo de un usuario es permanente de acuerdo con la gravedad de las causales del bloqueo. </p>
+
+                  <p><strong>8.9.</strong> CENET se reserva el derecho de comunicar al usuario las causales por las cuales su perfil ha sido bloqueado.</p>
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                      9.	Obligaciones de CENET
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p><strong>9.1.</strong>	Administrar el Sitio de acuerdo con el ordenamiento en Colombia.</p>
+
+                      <p><strong>9.2.</strong>	Autorizar la creación de la cuenta y el registro del Usuario Administrador de los proveedores. </p>
+
+                      <p><strong>9.3.</strong>	 Informar a través de su página web, las situaciones que afecten la disponibilidad de la misma. </p> 
+
+                      <p><strong>9.4.</strong>	 Publicar oportunamente los cambios en los Términos y Condiciones de Uso.</p>
+
+                      <p><strong>9.5.</strong>	Administrar la información veraz, completa, exacta, actualizada, comprobable y comprensible suministrada por los Usuarios.</p>  
+
+                      <p><strong>9.6.</strong>	Informar a solicitud del titular sobre el uso dado a sus datos. </p>
+
+                      <p><strong>9.7.</strong>	Informar a la Superintendencia de Industria y Comercio cuando se presenten riesgos de seguridad y administración de la información.</p>  
+
+                      <p><strong>9.8.</strong>	Informar al órgano de control competente cuando se presenten actuaciones que puedan llegar a constituir una actuación ilegal, delito, suplantación o falsificación. </p>
+
+                      <p><strong>9.9.</strong>	Tratar los datos personales de los usuarios registrados en la Plataforma, de acuerdo con la Política de Tratamiento de Datos Personales establecida por la plataforma y de conformidad con la autorización al tratamiento de datos que da el usuario al momento de vincularse en la Plataforma.</p>
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                      10.	Políticas de bloqueo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p><strong>10.1.</strong> En el caso en que la información suministrada por el usuario sea falsa, inexacta, errónea o poco fidedigna aun cuando el sistema ha solicitado más información al respecto.</p>
+
+                      <p><strong>10.2.</strong> En el caso en que el usuario cargue a la Plataforma documentación falsa o que no corresponde a su identidad.</p>
+
+                      <p><strong>10.3.</strong> En el caso en que un usuario haga caso omiso de la solicitud de información adicional o actualización de documentación por parte de los administradores de la plataforma.</p>
+
+                      <p><strong>10.4.</strong> En caso de uso no autorizado o indebido de la Plataforma, es decir, que se atribuya facultades que no corresponden a su perfil o en caso de utilizar el sistema para usos no establecidos en el Reglamento de la Plataforma.</p>
+
+                      <p><strong>10.5.</strong> En caso de no pago de las comisiones correspondientes a CENET</p> 
+
+                      <p><strong>10.6.</strong> Por solicitud de una autoridad competente administrativa o judicial.</p> 
+
+                      <p><strong>10.7.</strong> En el evento en que el usuario incumpla las obligaciones adquiridas bajo la negociación del sistema electrónica, de una factura establecido con su contraparte en una transacción o acuerdo.</p>
+
+                      <p><strong>10.8.</strong> En el caso en que el usuario incurra en una infracción de las obligaciones adquiridas en cualquier documento que requiera su aceptación.</p>
+
+                      <p><strong>10.9.</strong>	En el evento en que sea evidenciado que los usuarios transan las facturas registradas en el sistema por fuera del mismo, previo acuerdo de las tasas o de las condiciones del acuerdo dentro del sistema.</p>
+
+                      <p><strong>10.10.</strong>	Cuando se tengan indicios de que la cuenta del usuario está siendo usada para la realización de actividades ilícitas.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                      11.	Registro de facturas  
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                        <p>El usuario debe verificar que: </p>
+                        
+                          <p><strong>11.1.</strong> Se indique la forma de pago y plazo o fecha de vencimiento. </p>
+
+                          <p><strong>11.2.</strong> La factura esté denominada expresamente como factura de venta. </p>
+
+                          <p><strong>11.3.</strong> Se indiquen los apellidos y nombre o razón y NIT del vendedor de quien preste el servicio.</p> 
+
+                          <p><strong>11.4.</strong> Se indiquen apellidos y nombre o razón social y NIT del adquirente de los bienes o servicios.</p>
+
+                          <p><strong>11.5.</strong> Se discrimine el IVA pagado. </p>
+
+                          <p><strong>11.6.</strong> La factura tenga un número que corresponda a un sistema de numeración consecutiva. </p>
+
+                          <p><strong>11.7.</strong> Se incluya el valor total de la operación.</p> 
+
+                          <p><strong>11.8.</strong> Se Indique la calidad del retenedor del impuesto sobre las ventas.</p> 
+
+                          <p><strong>11.9.</strong> La factura haya sido entregada a su cliente y que se incluya el XML de la factura.</p> 
+
+                          <p><strong>11.10.</strong> En caso de rechazo de una factura, el usuario será notificado; sin embargo, queda a discreción de los usuarios administradores de la plataforma divulgar las razones que dieron lugar a esta decisión y así mismo son quienes se reservan el derecho de solicitar información adicional antes de la activación de una factura. </p>
+
+                          <p><strong>11.11.</strong> Los campos que hacen parte de la información pública de las facturas, sin que esta sea la única información asociada a la factura son: </p>
+
+                          <ul>
+                              <li>ID: Número de serie de la factura.</li>
+                              <li>CUFE </li>
+                              <li>Pagador Final de la factura </li>
+                              <li>Fecha de emisión de la factura</li>
+                              <li>Fecha de vencimiento de la factura </li>
+                              <li>Valor bruto de la factura (antes de impuestos) </li>
+                              <li>Impuesto aplicado a la factura </li>
+                              <li>Descuentos Tributarios </li>
+                              <li>Otros descuentos </li>
+                              <li>Valor Neto Final: Valor neto a pagar por parte del pagador final </li>
+                          </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                      12.	Transacción de la factura  
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p><strong>12.1.</strong>	Una transacción, es la generación de un acuerdo de endoso sobre la factura, al que llegan un potencial comprador y un tenedor de esa factura.</p> 
+
+                      <p><strong>12.2.</strong> Dentro de la zona transaccional de la plataforma, los usuarios podrán visualizar las facturas a la venta disponibles, activar facturas en las cuales figuran como tenedor para ofrecerlas en el mercado y así mismo modificar su lista de posturas de compra de acuerdo con las sugerencias hechas por el sistema, que podrá adecuarse a las preferencias del usuario teniendo en cuenta su historial de búsqueda.</p>  
+                      
+                      <p><strong>12.3.</strong>	Las transacciones se desarrollan mediante el endoso de las facturas comerciales, basado en la competencia directa. </p> 
+                      
+                      <p><strong>12.4.</strong>	Una vez efectuada una transacción, las partes del acuerdo podrán consultar los detalles de la misma en la plataforma, de igual forma podrán visualizar y descargar el endoso correspondiente en versión XML y la representación gráfica del mismo en un archivo PDF con la firma electrónica de vendedor y del comprador.</p>
+                      
+                      <p><strong>12.5.</strong>	La información de las empresas, concerniente al pago de las facturas no es visible para todos los usuarios de la Plataforma. De esta manera, el número de cuenta bancaria se hace visible únicamente para la empresa que ha comprado la factura de manera que se puedan cumplir las obligaciones derivadas de la transacción. </p>
+                       
+                      <p><strong>12.6.</strong>	El usuario comprador tiene 3 días hábiles, incluyendo el día de la transacción para realizar el giro correspondiente al valor de compra menos descuentos tributarios. Una vez efectuado el giro, el usuario comprador deberá indicar a través de la plataforma la consignación de los recursos.</p> 
+                      
+                      <p><strong>12.7.</strong>	Si al cabo de los 3 días descritos en el párrafo anterior, el comprador no ha girado el total o parte de los recursos de la compra de la factura, empiezan a correr intereses de mora sobre cada día calendario en el que no realice el pago, cabe resaltar que este interés es establecido por CENET, dentro de las condiciones establecidas por ley aplicables a tasas de interés de mora. Así mismo, es importante saber que la tasa puede ser mayor a la tasa de descuento con la cual compró la factura.</p>
+                      
+                      <p><strong>12.8.</strong> Una vez efectuada la confirmación del pago por parte del comprador, el vendedor podrá confirmar a través de la plataforma que recibió los recursos. Si transcurridos 7 días hábiles a partir de la confirmación del comprador y la recepción del pago no se ha confirmado por el vendedor, la plataforma confirmará el pago automáticamente y actualizará el comprador como nuevo tenedor de la factura negociada.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+                      13.	Comisiones de uso de la plataforma 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                          
+                      <p>La plataforma cobrará a sus usuarios, solo en el caso de realizarse una transacción de esta manera: </p>
+
+                          <ul>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFourteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                      14.	Firma de documentación. 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                        <p>Los documentos serán firmados de manera electrónica, en concordancia con la plena validez que la normativa vigente le otorga a la firma electrónica; siendo aún más específico la ley 527 de 1999, el Decreto 2364 de 2012 y el Decreto 1074 de 2015.</p>
+
+                        <p>Teniendo en cuenta lo anterior, es posible definir como CENET cumple con los dos requisitos esenciales de una firma electrónica de la siguiente manera: </p>
+
+                        <p><strong>Autenticidad:</strong> Las soluciones dentro de la plataforma, cumplen con el numeral primero del artículo 4 del decreto 2364 de 2012, debido a que los datos de creación de la firma, en el contexto en que son utilizados, corresponden exclusivamente al firmante. Lo anterior debido a que, mediante [Mecanismo de autenticación] verifican que la correspondencia de identidad de la persona que ha elaborado, enviado o a quien se le atribuya el documento electrónico, efectivamente es la misma.</p>
+
+                          <p><strong>Integridad:</strong> Las soluciones de firmado electrónico cumplen con el numeral segundo del artículo 4 del decreto 2364 de 2012 pues, mediante [Mecanismo de integridad] es posible detectar cualquier alteración no autorizada del mensaje de datos, hecha después del momento de la firma. De esta forma, la solución provee la posibilidad que el documento que no ha sido alterado por quien no está autorizado. Además, si hay alguna alteración por parte de persona autorizada, permite comprobar que no se ha manipulado el documento original. </p>
+
+                          <p>De esta forma, la solución que se presenta, constituye una firma electrónica y por ende, tienen la misma validez y proporciona los mismos efectos que una firma manuscrita, toda vez que son soluciones confiables y apropiadas.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFifteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+                      15.	Exoneración de responsabilidad 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p><strong>15.1.</strong>	CENET procura que la información contenida en el Sitio sea completa, exacta y actualizada. Procuramos que toda la información contenida, sea verificada, pero tratándose de información directamente suministrada por los usuarios, no se garantiza la exactitud, integridad, confiabilidad o vigencia del material, conexiones, o del resultado que se obtenga del uso del Sitio y de sus servicios. </p>
+
+                      <p><strong>15.2.</strong>	No es responsable por los ataques contra la seguridad del Sitio o por cualquier exposición o acceso no autorizado, fraudulento o ilícito que pueda afectar la confidencialidad, integridad o autenticidad de la información publicada o asociada con los contenidos y servicios que se ofrece. </p>
+
+                      <p><strong>15.3.</strong>	No es responsable por los perjuicios que pueda sufrir un Usuario de la plataforma, como consecuencia de fallas técnicas, de comunicaciones, transmisión de datos, fallas en el computador o cualquier otra falla ajena a CENET como administrador del sitio. </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSixteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+                      16.	Indemnización
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>El Usuario se obliga a indemnizar y mantener libre de todo daño directo, indirecto, previsto e imprevisto, o cualquier otro, a CENET, sus ejecutivos, directores o empleados, de cualquier reclamo, acción o demanda, incluyendo -sin limitación- los desembolsos en que haya debido incurrir por concepto de asesoría legal y contable, que se deriven directa o indirectamente de la utilización que el Usuario haya dado a los contenidos del Sitio, a los servicios ofrecidos, del material o del incumplimiento de las estipulaciones contenidas en el presente instrumento.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSeventeen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                      17.	Jurisdicción Competente y Ley Aplicable
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>Se señala como domicilio la ciudad de Bogotá D.C., y se regirá por las leyes que regulan la materia en la República de Colombia.  Las diferencias o controversias que surjan, serán resueltas de la siguiente forma, y con base en los siguientes parámetros:</p>
+
+                      <ol>
+                          <li>Cualquiera de las partes puede dar aviso por escrito a la otra, de cualquier conflicto o diferencia que no haya sido resuelta en el curso normal de su trato comercial.</li>
+                          <li>En un plazo no mayor de quince (15) días calendario, contados a partir de la entrega de la notificación del conflicto y/o diferencia, la parte receptora del aviso entregará a la otra una respuesta por escrito. El aviso y la respuesta incluirán: a) los argumentos que fundamentan su respuesta; y b) El nombre y título del ejecutivo que representará a esta parte y de cualquier otra persona que haya de acompañarlo. </li>
+                          <li>Recibida la respuesta, dentro de los quince (15) días calendario siguientes, los ejecutivos de ambas partes deberán reunirse en tiempo y lugar mutuamente acordados, en la ciudad de Bogotá D.C., con el fin de buscar una solución al conflicto. </li>
+                          <li>En caso que cualquier conflicto de carácter jurídico o legal que se origine en relación con este acuerdo, que no fuere posible resolver por el trámite anteriormente descrito, deberá someterse y ser resuelto definitivamente por la justicia civil ordinaria.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingEighteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseEighteen">
+                      18.	Habeas Data
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="flush-headingEighteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>CENET está comprometida con el respeto y garantía de los derechos de sus clientes y empleados en cumplimiento de la ley La Ley 1581 de 2012 y su decreto 1377 de 2013, y por ende, ha creado las políticas de tratamiento de información que se complementan con los términos y condiciones de nuestros servicios otorgando un absoluto respeto de su información que es de nuestro mayor interés.</p>
+
+                      <p>Para tal efecto puede consultar nuestras políticas de tratamiento de la información en el link de nuestro <strong><a href="http://www.mifactoring.com/políticas_de_privacidad">www.mifactoring.com/políticas_de_privacidad</a></strong> sitio WEB ‘Política de tratamiento de la información’, las cuales se entienden aceptadas con la aprobación que usted hace de los términos y condiciones de nuestros servicios. </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingNineteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseNineteen">
+                      19.	Atención a Usuarios
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNineteen" class="accordion-collapse collapse" aria-labelledby="flush-headingNineteen" data-bs-parent="#accordionFlushTerms">
+                    <div class="accordion-body">
+                      <p>La Plataforma cuenta con un Centro de ayuda en donde se coloca a disposición del usuario una serie de recursos tecnológicos y humanos para resolver sus inquietudes y requerimientos, dando de esta manera una gestión integral y oportuna a los problemas del usuario.</p> 
+
+                          <p>El centro de ayuda consta de las siguientes secciones: </p>
+
+                          <ul>
+                              <li>Preguntas Frecuentes </li>
+                              <li>Facturación Electrónica</li>
+                              <li>Usuarios </li>
+                              <li>Transacciones</li>
+                              <li>Notificaciones</li>
+                          </ul>
+
+                          <p>Este recurso se encuentra disponible en la página web de la Plataforma en la dirección <strong><a href="http://www.mifactoring.com/centrodeayuda">www.mifactoring.com/centrodeayuda</a></strong> y no solo responde a las preguntas más comunes, sino que brinda atención personalizada en caso de que un usuario requiera resolver una situación particular</p>
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+            </div> 
+
+
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
