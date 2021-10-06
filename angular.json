@@ -108,10 +108,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/bootstrap/dist/js/vendor-all.min.js",
-              "node_modules/bootstrap/dist/js/feather.min.js",
-              "node_modules/bootstrap/dist/js/pcoded.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           }
         }
