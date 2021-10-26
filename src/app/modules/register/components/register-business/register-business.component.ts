@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -22,7 +22,11 @@ export class RegisterBusinessComponent implements OnInit {
     useSubmitBehavior: true
   }
 
-  constructor() {}
+  constructor(private router: Router) { }
+  onSubmit() {
+    this.router.navigate(['/registeragent']);
+  }
+
 
   ngOnInit() {
 

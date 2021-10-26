@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,7 +23,10 @@ export class RegisterAgentComponent implements OnInit {
     useSubmitBehavior: true
   }
 
-  constructor() {}
+  constructor(private router: Router) { }
+  onSubmit() {
+    this.router.navigate(['/registerpep']);
+  }
 
   ngOnInit() {
 

@@ -6,6 +6,10 @@ import { ProfileComponent } from "./components/profile/profile.component";
 
 export const NavigationRouting: Routes = [
     {
+        path: 'dashboard',
+        component: HomeComponent
+    },
+    {
         path: 'invoice',
         component: InvoiceComponent
     },

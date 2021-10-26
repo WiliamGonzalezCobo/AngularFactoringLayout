@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-password.component.css']
 })
 export class RegisterPasswordComponent implements OnInit {
+
+  
 
   buttonContinuar: any = {
     text: "Continuar",
@@ -22,7 +24,11 @@ export class RegisterPasswordComponent implements OnInit {
     useSubmitBehavior: true
   }
 
-  constructor() {}
+  constructor(private router: Router) { }
+  onSubmit() {
+    this.router.navigate(['/registerbusiness']);
+  }
+
 
   ngOnInit() {
 

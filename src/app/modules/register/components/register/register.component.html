@@ -17,8 +17,8 @@
     <p>Registro para primera circulación de la factura electrónica de venta como título valor. Consulte las facturas crédito que tiene pendiente por registrar ante la DIAN.</p>
     
     <h3 class="title-form mt-2">Información empresa</h3>
-          <dx-form id="form"
-        [formData]="employee">
+    <form action="your-action" (submit)="onSubmit()"> 
+          <dx-form id="form">
         <dxi-item itemType="group" cssClass="first-group" [colCount]="1">
           <dxi-item itemType="group">
               <dxi-item dataField="RazónSocial"></dxi-item>
@@ -50,25 +50,24 @@
          <dxi-item itemType="group" cssClass="fifth-group" [colCount]="1">
           
            
-            <div class="justify-content-center d-flex my-3">
+            <div class="justify-content-center d-flex mt-5 mb-3">
               
               <dx-check-box [value]="false"></dx-check-box><p class="ms-2">Autorizo el <strong><a [routerLink]="" data-bs-toggle="modal" data-bs-target="#allowance">tratamiento de datos personales</a></strong>.</p>
               
           </div>
         </dxi-item>
 
-        <dxi-item itemType="group" cssClass="sixth-group mt-3" [colCount]="1">  
+        <dxi-item itemType="group" cssClass="sixth-group" [colCount]="1">  
 
           <dxi-item 
           itemType="button"
           horizontalAlignment="center"
-          routerLink="/registerpassword" 
           [buttonOptions]="buttonContinuar">
           </dxi-item>
     
         </dxi-item>
       </dx-form>
-
+    </form>
 
       
 

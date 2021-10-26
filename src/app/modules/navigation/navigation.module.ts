@@ -10,13 +10,14 @@ import {    DxDataGridModule,
             DxButtonModule,
             DxTextBoxModule,
             DxValidatorModule,
-            DxTextAreaModule } from "devextreme-angular";
+            DxTextAreaModule,
+            DxAccordionModule,
+            DxRadioGroupModule,
+            DxTabPanelModule } from "devextreme-angular";
 import { HomeComponent } from "./components/home/home.component";
 import { InvoiceComponent } from "./components/invoice/invoice.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { NavigationRouting } from "./navigation.routing";
-
-
 
 
 
@@ -39,6 +40,9 @@ import { NavigationRouting } from "./navigation.routing";
         DxTabsModule,
         DxTextBoxModule,
         DxValidatorModule,
+        DxTabPanelModule,
+        DxAccordionModule,
+        DxRadioGroupModule,
         RouterModule.forChild(NavigationRouting)
     ],
     exports: [
@@ -47,5 +51,5 @@ import { NavigationRouting } from "./navigation.routing";
 })
 
 export class NavigationModule {
-   
+
 }

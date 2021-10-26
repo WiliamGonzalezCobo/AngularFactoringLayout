@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() {}
+  constructor(private router: Router) { }
+  onSubmit() {
+    this.router.navigate(['/registerpassword']);
+  }
 
   ngOnInit() {
 
@@ -21,6 +25,10 @@ export class RegisterComponent implements OnInit {
     useSubmitBehavior: true
   }
 
+  
+
 }
+
+
 
 

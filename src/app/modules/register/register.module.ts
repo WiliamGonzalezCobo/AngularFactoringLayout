@@ -13,7 +13,6 @@ import {    DxDataGridModule,
             DxValidatorModule,
             DxRadioGroupModule, 
             DxTemplateModule,
-            DxRadioGroupComponent,
             DxTextAreaModule } from "devextreme-angular";
 
 import { ForgotPasswordComponent } from "./components/forgot-password/forgot-password.component";
@@ -66,4 +65,6 @@ export class RegisterModule {
 
 
 }
+
+
 

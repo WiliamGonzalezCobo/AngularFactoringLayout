@@ -343,43 +343,77 @@ export class Service {
 }
 
 // PROFILE
+export class Task {
+    subject: string;
+    priority: number;
+}
 
-export class Tab {
+export class PriorityEntity {
     id: number;
     text: string;
-    icon: string;
-    content: string;
+}
+
+export class PriorityEntityRenta {
+    id: number;
+    text: string;
+}
+
+export class PriorityEntityIca {
+    id: number;
+    text: string;
 }
 
 
 
-let tabs: Tab[] = [
-    {     
-        id: 0,
-        text: "user", 
-        icon: "user",
-       content:"sd",
-    },
-    { 
-        id: 1,
-        text: "comment", 
-        icon: "comment", 
-        content: "Comment tab content",
-    },
-    { 
-        id: 2,
-        text: "find", 
-        icon: "find", 
-        content: "Find tab content",
-    }
+const priorityEntities: PriorityEntity[] = [
+    { id: 0, text: "Sí" },
+    { id: 1, text: "No" },
+];
+
+const priorityEntitiesRenta: PriorityEntity[] = [
+    { id: 0, text: "Declarante" },
+    { id: 1, text: "No declarante" },
 ];
 
 
+const priorityEntitiesIca: PriorityEntity[] = [
+    { id: 0, text: "Actividad gravada" },
+    { id: 1, text: "Actividad No gravada" },
+];
+
+let tasks: Task[] = [{
+    subject: "Choose between PPO and HMO Health Plan",
+    priority: 3
+}, {
+    subject: "Non-Compete Agreements",
+    priority: 0
+}, {
+    subject: "Comment on Revenue Projections",
+    priority: 1
+}, {
+    subject: "Sign Updated NDA",
+    priority: 2
+}, {
+    subject: "Submit Questions Regarding New NDA",
+    priority: 3
+}, {
+    subject: "Rollout of New Website and Marketing Brochures",
+    priority: 3
+}];
 
 @Injectable()
-export class profileTabs {
-    getTabs(): Tab[] {
-        return tabs;
+export class ServiceRadio {
+    getTasks(): Task[] {
+        return tasks;
+    }
+    getPriorityEntities(): PriorityEntity[] {
+        return priorityEntities;
+    }
+    getPriorityEntitiesRenta(): PriorityEntityRenta[] {
+        return priorityEntitiesRenta;
+    }
+    getPriorityEntitiesIca(): PriorityEntityIca[] {
+        return priorityEntitiesIca;
     }
 }
 
@@ -396,5 +430,6 @@ export class businessRegister {
     Address: string;
     StateID: number;
 }
+
 
 
